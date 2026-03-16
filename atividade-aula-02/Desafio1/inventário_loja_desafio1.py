@@ -21,6 +21,5 @@ for item in estoque:
 
 print(f"\nValor total em estoque: R$ {total_estoque:.2f}")
 
-# Bônus: list comprehension — produtos em falta (quantidade == 0)
 em_falta = [item["nome"] for item in estoque if item["quantidade"] == 0]
 print(f"\nProdutos em falta: {em_falta}")
